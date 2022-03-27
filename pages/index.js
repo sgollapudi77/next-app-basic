@@ -12,9 +12,10 @@ export default function Home() {
       </Head>
       <body>
         <ul>
-          <li className = {styles.link}><Link href = "/products">Products</Link></li>
-          <li className = {styles.link}><Link href = "/about">About</Link></li>
+          <li className = {styles.link}><Link href = "/products">Products(ISR)</Link></li>
+          <li className = {styles.link}><Link href = "/about">Static</Link></li>
           <li className = {styles.link}><Link href = "/server-side">Server-side Example</Link> </li>
+          <li className = {styles.link}><Link href = "/ssg">SSG</Link> </li>
         </ul>
       </body>
     </div>
