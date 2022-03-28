@@ -10,7 +10,7 @@ export async function getStaticProps() {
           products:data,
           generatedDate : new Date().toLocaleTimeString() || null
       }, // will be passed to the page component as props
-      revalidate : 5,
+      revalidate : 50,
     }
 }
 
