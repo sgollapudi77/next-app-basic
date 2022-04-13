@@ -10,7 +10,7 @@ export async function getStaticProps() {
           products:data,
           generatedDate : new Date().toLocaleTimeString() || null
       }, // will be passed to the page component as props
-      revalidate : 50,
+      revalidate : 20,
     }
 }
 
@@ -23,7 +23,7 @@ export default function Products(props){
   return(
         <>
             <h1>Products at the time : {props.generatedDate}</h1>
-            <h2>This page has revalidate time of 5 sec</h2>
+            <h2>This page has revalidate time of 20 sec</h2>
             <ul>
                 {props.products.map((product)=>
                 (<li className={styles.link} key={product.id}>
