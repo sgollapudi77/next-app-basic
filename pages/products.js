@@ -23,13 +23,14 @@ export default function Products(props){
   return(
         <>
             <h1>Products at the time : {props.generatedDate}</h1>
-            <h2>This page has revalidate time of 20 sec</h2>
+            
             <ul>
                 {props.products.map((product)=>
                 (<li className={styles.link} key={product.id}>
                   <Link href = {`/products/${product.id}`}>{product.desc}</Link>
                 </li>))}
             </ul>
+            <h2>This page has revalidate time of 20 sec</h2>
         </>
       )
 }
