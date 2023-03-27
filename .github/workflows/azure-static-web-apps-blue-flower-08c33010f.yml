@@ -20,7 +20,7 @@ jobs:
           submodules: true
       - name: Build
         run: |
-          npm install && npx next build
+          npm install && npm run build
           npm prune --production
       - name: Build And Deploy
         id: builddeploy
