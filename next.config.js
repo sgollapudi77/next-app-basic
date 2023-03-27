@@ -1,6 +1,7 @@
 const data = require("./pages/api/products.json")
 
 module.exports = {
+  output: 'standalone',
   trailingSlash: true,
   distDir : 'build',
   images: {
