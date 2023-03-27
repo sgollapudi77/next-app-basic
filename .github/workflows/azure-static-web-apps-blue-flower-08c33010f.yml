@@ -18,12 +18,11 @@ jobs:
       - uses: actions/checkout@v2
         with:
           submodules: true
+          node-version: 16
       - name: Build
         run: |
           npm install && npm run build
           npm prune --production
-        with:
-          node-version: 16
       - name: Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
