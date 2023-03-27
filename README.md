@@ -1,5 +1,6 @@
 This is a Sample Next.JS Project.
-
 This contains examples of all types of rendering like SSR, ISR, SSG.
-
-products.json
+Deployed in the Azure using Static Web Apps.
+### SG77
+Hello
+Updating Readme to trigger workflows(1)
