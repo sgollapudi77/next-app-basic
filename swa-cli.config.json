@@ -1,11 +1,20 @@
 {
+  "$schema": "https://aka.ms/azure/static-web-apps-cli/schema",
   "configurations": {
-    "next-app-basic": {
+    "1": {
       "appLocation": ".",
       "outputLocation": ".next",
       "appBuildCommand": "npm run build",
       "run": "npm run dev",
       "appDevserverUrl": "http://localhost:3000"
+    },
+    "next-app-basic": {
+      "appLocation": ".",
+      "outputLocation": ".next",
+      "appBuildCommand": "npm run build",
+      "run": "npm run dev",
+      "appDevserverUrl": "http://localhost:3000",
+      "verbose": "silly"
     }
   }
 }
